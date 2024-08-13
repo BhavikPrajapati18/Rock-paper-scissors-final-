@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>R-P-S</title>
+    <link rel="stylesheet" href="rock-paper-sis.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <p class="title">Rock Paper Sisscors</p>
+
+    <button
+      class="rock-button"
+      onclick="
+      PlayGame('Rock');
+      "
+    >
+      <img class="rock-icon" src="images/Rock.png" />
+    </button>
+
+    <button
+      class="move-item"
+      onclick="
+      PlayGame('Paper');
+    "
+    >
+      <img class="move-icon" src="images/Paper.png" />
+    </button>
+
+    <button
+      class="move-item"
+      onclick="
+    PlayGame('Sisscors');
+    "
+    >
+      <img class="move-icon" src="images/Sisscors.png" />
+    </button>
+
+    <p class="winRate win-css"></p>
+    <p class="moveSelected"></p>
+    <p class="winorloss score-css"></p>
+
+    <button
+      class="reset-button"
+      onclick="
+    Score.Wins = 0;
+    Score.Losses = 0;
+    Score.Ties = 0;
+    updateScore();
+    "
+    >
+      Reset Score
+    </button>
+
+    <script src="rock-paper-sis.js"></script>
+  </body>
+</html>
